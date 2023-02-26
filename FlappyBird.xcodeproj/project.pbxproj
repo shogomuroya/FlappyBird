@@ -11,8 +11,12 @@
 		9632520829A215A200428F18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9632520729A215A200428F18 /* SceneDelegate.swift */; };
 		9632520A29A215A200428F18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9632520929A215A200428F18 /* ViewController.swift */; };
 		9632520D29A215A200428F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9632520B29A215A200428F18 /* Main.storyboard */; };
-		9632520F29A215A300428F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9632520E29A215A300428F18 /* Assets.xcassets */; };
 		9632521229A215A300428F18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9632521029A215A300428F18 /* LaunchScreen.storyboard */; };
+		9632521A29A222D800428F18 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9632521929A222D800428F18 /* GameScene.swift */; };
+		9632521C29A616D700428F18 /* itemSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9632521B29A616D700428F18 /* itemSound.mp3 */; };
+		9632521E29A616EB00428F18 /* attackSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9632521D29A616EB00428F18 /* attackSound.mp3 */; };
+		9632522029A6171400428F18 /* flappyBgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9632521F29A6171400428F18 /* flappyBgm.mp3 */; };
+		9632522629A622A900428F18 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9632522529A622A900428F18 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +25,13 @@
 		9632520729A215A200428F18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9632520929A215A200428F18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9632520C29A215A200428F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9632520E29A215A300428F18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9632521129A215A300428F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9632521329A215A300428F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9632521929A222D800428F18 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		9632521B29A616D700428F18 /* itemSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = itemSound.mp3; sourceTree = "<group>"; };
+		9632521D29A616EB00428F18 /* attackSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = attackSound.mp3; sourceTree = "<group>"; };
+		9632521F29A6171400428F18 /* flappyBgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = flappyBgm.mp3; sourceTree = "<group>"; };
+		9632522529A622A900428F18 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +67,12 @@
 				9632520529A215A200428F18 /* AppDelegate.swift */,
 				9632520729A215A200428F18 /* SceneDelegate.swift */,
 				9632520929A215A200428F18 /* ViewController.swift */,
+				9632521929A222D800428F18 /* GameScene.swift */,
 				9632520B29A215A200428F18 /* Main.storyboard */,
-				9632520E29A215A300428F18 /* Assets.xcassets */,
+				9632521B29A616D700428F18 /* itemSound.mp3 */,
+				9632521D29A616EB00428F18 /* attackSound.mp3 */,
+				9632521F29A6171400428F18 /* flappyBgm.mp3 */,
+				9632522529A622A900428F18 /* Media.xcassets */,
 				9632521029A215A300428F18 /* LaunchScreen.storyboard */,
 				9632521329A215A300428F18 /* Info.plist */,
 			);
@@ -125,9 +137,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9632521E29A616EB00428F18 /* attackSound.mp3 in Resources */,
 				9632521229A215A300428F18 /* LaunchScreen.storyboard in Resources */,
-				9632520F29A215A300428F18 /* Assets.xcassets in Resources */,
+				9632522629A622A900428F18 /* Media.xcassets in Resources */,
+				9632522029A6171400428F18 /* flappyBgm.mp3 in Resources */,
 				9632520D29A215A200428F18 /* Main.storyboard in Resources */,
+				9632521C29A616D700428F18 /* itemSound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +155,7 @@
 			files = (
 				9632520A29A215A200428F18 /* ViewController.swift in Sources */,
 				9632520629A215A200428F18 /* AppDelegate.swift in Sources */,
+				9632521A29A222D800428F18 /* GameScene.swift in Sources */,
 				9632520829A215A200428F18 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +309,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +317,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.tecacademy.shogo.muroya.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +339,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +347,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.tecacademy.shogo.muroya.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
